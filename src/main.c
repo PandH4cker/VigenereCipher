@@ -3,9 +3,18 @@
 
 #include "../includes/vigenereCipher.h"
 #include "../includes/babageAttack.h"
+#include "../includes/utils.h"
 
 int main() {
-    char s[] = "Panda Warriors";
+    char s[] = "PandAlcohol";
+    char ** splitted = splitInParts(s, 2);
+    for (int i = 0; i < 2; ++i)
+        printf("splitted[%d]: %s\n", i, splitted[i]);
+
+    for (int i = 0; i < 2; ++i)
+        free(splitted[i]);
+    free(splitted);
+    /*char s[] = "Panda Warriors";
     char key[] = "PandaAttackers";
 
     printf("Original Message: %s\n", s);
@@ -21,7 +30,7 @@ int main() {
 
     free(encryptedMessage);
     free(decryptedMessage);
-    free(cipher.key);
+    free(cipher.key);*/
 
     return EXIT_SUCCESS;
 }

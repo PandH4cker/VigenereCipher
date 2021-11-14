@@ -9,5 +9,6 @@
 #define EQUIDISTRIBUTED_COINCIDENCE .0385
 
 float coincidence(char * message);
+int findKeyLength(char * message);
 
 #endif //VIGENERECIPHER_BABAGEATTACK_H
