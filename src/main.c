@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "../includes/vigenereCipher.h"
+#include "../includes/babageAttack.h"
 
 int main() {
     char s[] = "Panda Warriors";
